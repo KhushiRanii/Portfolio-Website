@@ -5,7 +5,7 @@ let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => 
 {
-    menuIcon.classList.toggle('fa-xmark');
+    nemuIcon.classList.toggle('fa-xmark');
     navbar.classList.toggle('active');
 }
 
@@ -22,25 +22,27 @@ window.onscroll = () =>
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
         
-        if(top >= offset && top < offset + height)
+    if(top >= offset && top < offset + height)
         {
             navLinks.forEach.apply(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
         };
-    });
+ });
 
     /*=================================== Sticky navbar ================================*/
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky'. window.scrollY > 100);
+
+let header = document.querySelector('header');
+header.classList.toggle('sticky'. window.scrollY > 100);
 
     /*========================== remove toggle icon and navbar ==========================*/
-    menuIcon.classList.remove('fa-xmark');
-    navbar.classList.remove('active');
+nemuIcon.classList.remove('fa-xmark');
+navbar.classList.remove('active');
 };
 
 /*======================================= scroll reveal ===================================*/
+
 ScrollReveal({ 
     distance: '80px', 
     duration: 2000,
@@ -53,10 +55,10 @@ ScrollReveal().reveal('.home-contact p, .about-content', {origin:'right' });
 
 /*====================================== typed js ===========================================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Web Developer', 'Backened Developer', 'App developer','Coder'],
-    typeSpeed: 70,
-    backSpeed: 70,
-    backDelay: 1000,
+    string: ['Web Developer', 'Backened Developer', 'App developer','Coder'],
+    typeSpeed: 7,
+    backSpeed: 7,
+    backDelay: 100,
     loop: true,
 });
 
