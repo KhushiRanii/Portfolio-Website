@@ -137,6 +137,7 @@ span{
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
+
 .social-media a:hover
 {
     background:var(--main--color);
@@ -301,10 +302,11 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 3rem;
     background: var(--text-color);
-    border-radius: 50%;
+   
+    margin-bottom: 1rem;
 }
 .portfolio-layer a i 
 {
